@@ -1,0 +1,48 @@
+ code {
+    color: antiquewhite;
+ }
+
+ h2 {
+    color: azure;
+ }
+
+ hr {
+    height: 3px;
+    width: 100%;
+    border-color: darkgray;
+    border-style: solid;
+    background-color: darkgray;
+ }
+
+ div>hr {
+    height: 1px;
+    width: 100%;
+    color: darkgray;
+    border-color: darkgray;
+ }
+
+ div {
+    margin-top: 5% 0;
+ }
+
+ .header {
+    border: 6px solid beige;
+    border-width: 100%;
+    padding: 0.5em;
+ }
+
+ li,
+ p {
+     font-size: 13px;
+ }
+
+ button {
+   background-color: transparent;
+   border: 0 solid;
+   margin-top: 2%;
+ }
+
+ img {
+   width: 4em;
+   height: 4em;
+ }
