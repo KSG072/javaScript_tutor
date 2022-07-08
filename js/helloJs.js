@@ -40,3 +40,21 @@ function changeType(){
     alert(Boolean(1));
     alert(Boolean("hi")); //길이가 있는 문자열은 모두 true, 'false'나 '0'역시 true로 반환됨.
 }
+
+function testOperation(){
+    let x = 123;
+    alert(+x);
+    alert(-x);
+    x = "123";
+    let y = "876";
+    alert(typeof(+x));
+    alert(x + y);
+    alert(+x + +y);
+    let a, b=1, c;
+    a = b + (c = b+1);
+    alert(a);
+    a = b = c = 1;
+    alert(b);
+    a = 4;
+    alert(b);
+}

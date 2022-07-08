@@ -107,5 +107,35 @@
             </code>
             <button onclick="changeType()"><img src="src/execute.png" style="background-color: transparent;"></button>
         </div>
+        <hr/>
+        <div>
+            <h2>기본 연산자</h2>
+            <ul>
+                <li><code>+</code>나<code>-</code>를 변수 앞에 붙임 으로써 숫자의 부호를 변경 가능하다.</li>
+                <li>숫자형이 아닌 변수는 위의 연산자로 숫자형으로 변환가능하다.</li>
+                <li><code>"2"+"3"</code>의 결과는 <code>"23"</code>이지만, 변수명의 앞에 <code>+</code>를 붙임으로써 5의 값을 얻을 수 있다.</li>
+                <li>할당연산자 <code>=</code>를 이용하여 사용하기 직전 할당가능하거나, 체이닝을 할 수 있다.</li>
+            </ul>
+            <code>
+                &lt;script&gt<br/>
+                let x = 123;<br/>
+                alert(+x);<br/>
+                alert(-x);<br/>
+                x = "123";<br/>
+                let y = "876";<br/>
+                alert(typeof(+x));<br/>
+                alert(x + y);<br/>
+                alert(+x + +y);<br/>
+                let a, b=1, c;<br/>
+                a = b + (c = b+1);<br/>
+                alert(a);<br/>
+                a = b = c = 1;<br/>
+                alert(b);<br/>
+                a = 4;<br/>
+                alert(b);<br/>
+                &lt/script&gt<br/>
+            </code>
+            <button onclick="testOperation()"><img src="src/execute.png" style="background-color: transparent;"></button>
+        </div>
     </body>
 </html>
