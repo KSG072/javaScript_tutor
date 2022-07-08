@@ -1,3 +1,5 @@
+'use strict';
+
 function hello(){
     alert("hello world!");
 }
@@ -26,4 +28,15 @@ function useInputMethod(){
     alert(`입력하신 내용은 '${userInput}'입니다.`);
     let isAdmin = confirm('당신이 이 페이지 만든 사람인가요?');
     alert(isAdmin);
+}
+
+function changeType(){
+    alert("8"/"2");
+    let value = 1231;
+    alert(String(value)+", "+typeof(String(value)));
+    alert(Number("   234  ")); //처음과 끝 공백 제거
+    alert(Number("1z2s"));
+    alert(Number(true));
+    alert(Boolean(1));
+    alert(Boolean("hi")); //길이가 있는 문자열은 모두 true, 'false'나 '0'역시 true로 반환됨.
 }

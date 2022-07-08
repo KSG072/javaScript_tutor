@@ -90,5 +90,22 @@
             <p><code>let isAdmin = confirm('당신이 이 페이지 만든 사람인가요?')</code></p>
             <button onclick="useInputMethod()"><img src="src/execute.png" style="background-color: transparent;"></button>
         </div>
+        <hr/>
+        <div>
+            <h2>자료형 변환</h2>
+            <code>
+                &lt;script&gt<br/>
+                alert("8"/"2");<br/>
+                let value = 1231;<br/>
+                alert(String(value)+", "+typeof(String(value)));<br/>
+                alert(Number("   234  ")); //처음과 끝 공백 제거<br/>
+                alert(Number("1z2s"));<br/>
+                alert(Number(true));<br/>
+                alert(Boolean(1));<br/>
+                alert(Boolean("hi")); //길이가 있는 문자열은 모두 true, 'false'나 '0'역시 true로 반환됨.<br/>
+                &lt/script&gt<br/>
+            </code>
+            <button onclick="changeType()"><img src="src/execute.png" style="background-color: transparent;"></button>
+        </div>
     </body>
 </html>
